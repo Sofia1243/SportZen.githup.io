@@ -1,0 +1,628 @@
+/* Estilos del Carrusel */
+.carousel-img {
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+/* Texto de bienvenida */
+.welcome h1 {
+  color: var(--primary-color);
+}
+
+.motivational-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--secondary-color);
+  margin-top: 1rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón con borde animado */
+.btn-cta {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s, background-color 0.3s;
+}
+
+.btn-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: var(--secondary-color);
+  transition: transform 0.5s;
+  transform: rotate(45deg) translateX(-100%);
+  z-index: 0;
+}
+
+.btn-cta:hover::before {
+  transform: rotate(45deg) translateX(0);
+}
+
+.btn-cta:hover {
+  color: var(--background-color);
+}
+
+.btn-cta span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Barra de navegación */
+.navbar-magic {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-magic .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar-magic .navbar-nav .nav-link {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  transition: color 0.3s;
+}
+
+.navbar-magic .navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 300px;
+  }
+}
+
+
+
+  
+:root {
+ --bright-yellow: #FFDD00; /* Amarillo Brillante */
+--electric-blue: #00BFFF; /* Azul Eléctrico */
+--dark-gray: #333333; /* Gris Oscuro */
+
+}
+
+/* Fuente personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Aplicamos la fuente Poppins a los textos */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos del Carrusel */
+.carousel-img {
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+/* Texto de bienvenida */
+.welcome h1 {
+  color: var(--primary-color);
+}
+
+.motivational-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--quote-color);
+  margin-top: 1rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón con borde animado */
+.btn-cta {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s, background-color 0.3s;
+}
+
+.btn-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: var(--secondary-color);
+  transition: transform 0.5s;
+  transform: rotate(45deg) translateX(-100%);
+  z-index: 0;
+}
+
+.btn-cta:hover::before {
+  transform: rotate(45deg) translateX(0);
+}
+
+.btn-cta:hover {
+  color: var(--background-color);
+}
+
+.btn-cta span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Barra de navegación */
+.navbar-magic {
+  position: fixed;
+  display: none;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-magic .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar-magic .navbar-nav .nav-link {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  transition: color 0.3s;
+}
+
+.navbar-magic .navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 300px;
+  }
+}
+
+/* Fuente personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Aplicamos la fuente Poppins a los textos */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos del Carrusel */
+.carousel-img {
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+/* Texto de bienvenida */
+.welcome h1 {
+  color: var(--primary-color);
+}
+
+.motivational-quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--quote-color);
+  margin-top: 1rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón con borde animado */
+.btn-cta {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s, background-color 0.3s;
+}
+
+.btn-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: var(--secondary-color);
+  transition: transform 0.5s;
+  transform: rotate(45deg) translateX(-100%);
+  z-index: 0;
+}
+
+.btn-cta:hover::before {
+  transform: rotate(45deg) translateX(0);
+}
+
+.btn-cta:hover {
+  color: var(--background-color);
+}
+
+.btn-cta span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Barra de navegación */
+.navbar-magic {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-magic .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar-magic .navbar-nav .nav-link {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  transition: color 0.3s;
+}
+
+.navbar-magic .navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--secondary-color);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 300px;
+  }
+}
+
+
+/* Barra de navegación */
+.navbar {
+  background-color: #000; /* Fondo negro */
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand.logo {
+  color: #ffcc00; /* Amarillo para el logo */
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Efecto glow */
+}
+
+.navbar-brand.logo:hover {
+  color: #fff; /* Blanco al pasar el mouse */
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Estilo de los enlaces */
+.nav-link {
+  color: #ddd; /* Gris claro por defecto */
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #ffcc00; /* Amarillo al pasar el cursor */
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffcc00; /* Subrayado amarillo */
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Subrayado completo al hover */
+}
+
+/* Botón "Reserva tu Clase Gratis" */
+.btn-primary {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #d1a300; /* Un amarillo más oscuro */
+  color: #fff; /* Texto blanco */
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Ocultar íconos por defecto */
+.mobile-icon {
+  display: none;
+}
+
+/* Mostrar íconos solo en pantallas pequeñas */
+@media (max-width: 768px) {
+  .mobile-icon {
+    display: inline-block;
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    color: #ffcc00; /* Amarillo */
+  }
+}
+
+/* Sección Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-color: #000; /* Fondo de respaldo si no carga el video */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta el video al tamaño del contenedor */
+  filter: brightness(0.5); /* Oscurece ligeramente para resaltar el texto */
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Capa de opacidad */
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(255, 204, 0, 0.8);
+}
+
+.btn-primary {
+  background-color: #ffcc00;
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #d1a300;
+  color: #fff;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #ffcc00;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+.btn-light:hover {
+  background-color: #ffcc00;
+  color: #fff;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+/* Estilo para el texto sobre las imágenes */
+.carousel-caption h3 {
+  font-size: 2rem;
+  font-family: 'Cursive', sans-serif;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6), 0 1px 3px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.text-magic {
+  font-size: 2.5rem;
+  font-family: 'Cursive', sans-serif;
+  color: #f7b800; /* Color dorado para un toque mágico */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4), 0 2px 10px rgba(0, 0, 0, 0.5);
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.glow-text {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Efecto al pasar el ratón sobre los botones */
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #f7b800;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Asegura que el carrusel tenga la imagen de fondo bien posicionada */
+.carousel-img {
+  object-fit: cover;
+  height: 3px; /* O ajusta la altura según sea necesario */
+  max-height: 30px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030; /* Asegúrate de que esté por encima del contenido */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  /*margin-top: 60px;   Compensa la barra fija */
+}
+ 
+.card.popular {
+  border: 2px solid #ff4500;
+  background-color: #ffe6e6;
+}
+.table-hover tbody tr:hover {
+  background-color: #f8f9fa; /* Color claro para resaltar */
+  cursor: pointer;
+}
+
+
+.blockquote {
+  background-color: #f9f9f9;
+  
+  border-left: 5px solid #f7b800 ;
+  padding: 15px 20px;
+  margin: 20px 0;
+  font-style: italic;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.0);
+}
+
+.blockquote-footer {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-top: 10px;
+  font-style: normal;
+}
+
+.carousel {
+  margin-top: -56px; /* Ajusta según la altura de la barra de navegación */
+}
+
+
+@media (max-width: 767px) {
+  .table-responsive {
+    -webkit-overflow-scrolling: touch; /* Mejora la experiencia de desplazamiento en móviles */
+  }
+}
+
+/* Ajusta el contenedor del carrusel */
+.carousel-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Asegura que las imágenes del carrusel sean responsivas */
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+/* Si quieres cambiar la altura en dispositivos pequeños */
+@media (max-width: 767px) {
+  .carousel {
+    max-height: 300px; /* Ajusta la altura para pantallas pequeñas */
+  }
+}
+
+
+ 

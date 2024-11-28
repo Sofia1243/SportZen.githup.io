@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SportZen - Tu gimnasio para alcanzar la mejor versión de ti mismo.">
+  <title>SportZen - Gimnasio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome para íconos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- CSS Personalizado -->
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <div class="hamburger" id="menu-toggle"> 
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand logo" href="Index.html">
+        <i class="fas fa-dumbbell"></i> SportZen
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Index.html"> <span class="mobile-icon"><i class="fas fa-list"></i></span>Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Planes de membresía.html"><span class="mobile-icon"><i class="fas fa-list"></i></span> Planes de Membresía</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Horarios de clases.html"><span class="mobile-icon"><i class="fas fa-clock"></i></span> Horarios de Clases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Información sobre los entrenadores.html"><span class="mobile-icon"><i class="fas fa-users"></i></span> Entrenadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">
+              <span class="mobile-icon"><i class="fas fa-user-circle"></i></span> Contacto</a>
+          </li>       
+    </div> 
+  </nav>
+  
+    <!-- Sección de Entrenadores -->
+    <section class="container">
+        <h2 class="mt-5">Conoce a Nuestros Entrenadores</h2>
+        <p>Nuestros entrenadores son profesionales certificados y apasionados por ayudarte a alcanzar tus metas de fitness.</p>
+        
+        <div class="row">
+            <!-- Entrenador 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Img/Entrenador de funcional.jpg" class="card-img-top" alt="Entrenador 1" width="3458" height="529px">
+                    <div class="card-body">
+                        <h5 class="card-title">Juan Pérez</h5>
+                        <p class="card-text">Especialista en entrenamiento funcional y alta intensidad. Con más de 10 años de experiencia.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Entrenador 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Img/Profe de yoga.jpg" class="card-img-top" alt="Entrenador 2" width="3458" height="529px">
+                    <div class="card-body">
+                        <h5 class="card-title">María López</h5>
+                        <p class="card-text">Instructora de yoga y pilates certificada. Apasionada por el bienestar físico y mental.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Entrenador 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Img/Entrenador de musculación.jpg" class="card-img-top" alt="Entrenador 3" width="3458" height="529px">
+                    <div class="card-body">
+                        <h5 class="card-title">Carlos Ramírez</h5>
+                        <p class="card-text">Experto en musculación y acondicionamiento físico. Te ayudará a alcanzar tus metas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 bg-light p-4 rounded">
+      <h4 class="text-center">Lo que dicen nuestros clientes</h4>
+      <div class="row">
+          <div class="col-md-6">
+              <blockquote class="blockquote">
+                  <p>"Entrenar con Juan fue una experiencia increíble. Sus clases de funcional son dinámicas, desafiantes y me ayudaron a mejorar mi fuerza y resistencia. ¡Nunca me había sentido tan en forma!"</p>
+                  <footer class="blockquote-footer">María, 28 años</footer>
+              </blockquote>
+          </div>
+          <div class="col-md-6">
+              <blockquote class="blockquote">
+                  <p>"Carlos es un verdadero profesional. Gracias a su enfoque en musculación, logré ganar masa muscular de manera eficiente y sin lesiones. Además, su atención al detalle me motivó en cada sesión."</p>
+                  <footer class="blockquote-footer">Diego, 35 años</footer>
+              </blockquote>
+          </div>
+          <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p>"Las clases de yoga con nuestra profesora fueron transformadoras. Su enfoque en la respiración y la flexibilidad me ayudó a liberar el estrés y mejorar mi bienestar general. ¡Recomiendo 100% las clases!"</p>
+                    <footer class="blockquote-footer">Laura, 30 años</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-6"> 
+                  <blockquote class="blockquote">
+                      <p>"SportZen no es solo un gimnasio, es un espacio donde me siento bien tanto física como mentalmente. La variedad de clases, la atención personalizada de los entrenadores y el ambiente relajado hacen que cada visita sea una experiencia única. ¡Es mi lugar para desconectar y mejorar!"</p>
+                      <footer class="blockquote-footer">Carlos, 40 años</footer>
+                  </blockquote>
+              </div>
+          </div>
+        </div>        
+      </div>
+  </section>
+  
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 SportZen. Todos los derechos reservados.</p>
+      <div>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> |
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
